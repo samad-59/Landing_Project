@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    animation: fadeIn 2s ease-in-out;
+}
+#about {
+    position: relative;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    padding: 100px 20px;
+    color: rgb(8, 6, 6);
+}
+
+
+.animate {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 1s ease-in-out forwards;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
